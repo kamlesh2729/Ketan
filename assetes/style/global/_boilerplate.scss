@@ -1,0 +1,28 @@
+@use './typography';
+@use './colors';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    scroll-behavior: smooth;
+    // scroll-margin-top: 0px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #ffa500;
+    scroll-margin: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 50%;
+}
+body{
+    position: relative;
+    
+}

@@ -1,0 +1,115 @@
+@use '../global' as *;
+
+%align-jusctify-center{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+%align-center{
+    display: flex;
+    align-items: center;
+}
+%jusctify-center{
+    display: flex;
+    justify-content: center;
+}
+
+.Classes{
+width: 100%;
+height: auto;
+padding: $head 0rem;
+background: #fdf6ed;
+text-align: center;
+@include tablet{
+    height: auto;
+}
+@include phone{
+    height: auto;
+}
+&_sp{
+    color: $oc;
+    font-family: $tfont;
+    font-size: $h1;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+&_h3{
+    font-size: 6rem;
+    font-weight: 600;
+    font-family: $hfont;
+    margin: $base 0rem;
+}
+&_right{
+    width: 100%;
+    height:90vh; 
+    @extend %align-jusctify-center;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: $base 0px;
+@include phone{ 
+    flex-direction: column;
+    height: auto;
+}
+&_card{
+    width: 25vw;
+    height: 90vh;
+    margin: 3rem;
+@include phone{
+    width: 90%;
+}
+&_imgbox{
+width: 100%;
+height: 40vh;
+overflow: hidden;
+&_img{
+        width: 100%;
+        height: 100%;
+&:hover{
+            transform: rotate(2deg) scale(1.2);
+            transition: all 0.3s linear;
+        }
+    }
+}
+&_infobox{
+    width: 100%;
+    height: 60vh;
+&_h3{
+    font-weight: 600;
+    font-size: $tall;
+    margin-top: 2rem;
+}
+&_p{
+    color: #a6a6a6;
+    font-size: $mid;
+    font-weight: 600;
+    margin: 1rem 0rem;
+}
+&_ul{
+    border-top: 2px dashed $oc;
+    @extend %align-jusctify-center;
+    gap: $tall;
+    margin: 2rem 0rem;
+    padding: 2rem 0rem;
+    &_li{
+        list-style: none;
+        &_sp{
+            color: $ocd;
+        }
+    }
+}
+&_btn{
+    width: 14vw;
+    height:7vh;
+    background-color: $oc;
+    color: white;
+    border: none;
+    font-size: $tall;
+    font-weight: 600;
+@include phone{
+    width: 26vw;
+}
+}
+}
+}
+}
+}

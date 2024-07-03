@@ -1,0 +1,125 @@
+@use '../global' as *;
+
+%align-jusctify-center{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+%align-center{
+    display: flex;
+    align-items: center;
+}
+%jusctify-center{
+    display: flex;
+    justify-content: center;
+}
+
+.Blog{
+    width: 100%;
+    height: 130vh;
+    padding: 2rem 3rem;
+    text-align: center;
+&_p{
+color: $oc;
+    font-family: $tfont;
+    font-size: $h1;
+    font-weight: 600;
+    margin-top: $base;
+}
+&_h3{
+    font-size: 6rem;
+    font-weight: 600;
+    font-family: $hfont;
+    margin: $base 0rem;
+}
+&_container{
+    width: 100%;
+    height:90vh; 
+    @extend %align-jusctify-center;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: $base 0px;
+@include phone{ 
+    flex-direction: column;
+    height: auto;
+}
+&_card{
+    width: 30vw;
+    height: 100vh;
+    margin: 1rem;
+    transition: all 0.3s ease-in-out;
+&:hover &_infobox_h3{
+    color: $ocd;
+}
+&:hover &_imgbox_img{
+    transform: rotate(2deg) scale(1.2);
+    transition: all 0.3s linear;
+}
+@include phone{
+    width: 90%;
+}
+&_imgbox{
+width: 100%;
+height: 40vh;
+overflow: hidden;
+&_img{
+        width: 100%;
+        height: 100%;
+}
+}
+&_infobox{
+    width: 100%;
+    height: 59vh;
+    padding: 2.5rem;
+    background-color: #fdeee9;
+    border-radius: 0 0 10px 10px;
+&_ul{
+    display: flex;
+    gap: $tall;
+    padding: 2rem 0px;
+&_li{
+    list-style: none;
+    display: inline-block;
+    font-size: $h1;
+    font-weight: 600;
+&_sp{
+        color: $ocd;
+        }
+    }
+}
+&_h3{
+    font-size: 2.8rem;
+    font-weight:700;
+    color: $bc;
+    margin: 2rem 0rem;
+    text-align: start;
+}
+&_p{
+    color: #6c6c6c;
+    font-size: $h1;
+    font-family:"Roboto", sans-serif;
+    font-weight:400;
+    line-height: 1.8;
+    margin: 1rem 0rem;
+    text-align:justify;
+}
+&_btn{
+    width: 14vw;
+    height:7vh;
+    background-color: $ocd;
+    color: white;
+    border: none;
+    font-size: $tall;
+    font-weight: 600;
+    margin: 1rem 0rem;
+&:hover{
+    background-color: $oc;
+}
+@include phone{
+    width: 26vw;
+}
+}
+}
+}
+}
+}

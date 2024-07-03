@@ -1,0 +1,77 @@
+@use '../global' as *;
+
+%align-jusctify-center{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+%align-center{
+    display: flex;
+    align-items: center;
+}
+%jusctify-center{
+    display: flex;
+    justify-content: center;
+}
+
+.Testimonal{
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 3rem;
+    background-color: aquamarine;
+&_left{
+    text-align: center;
+&_sp{
+color: $oc;
+    font-family: $tfont;
+    font-size: $h1;
+    font-weight: 600;
+    margin-top: $base;
+}
+&_h3{
+    font-size: 6rem;
+    font-weight: 600;
+    font-family: $hfont;
+    margin: $base 0rem;
+}
+}
+&_right{
+    width: 80vw;
+    margin: 2rem auto;
+    @extend %align-jusctify-center;
+    text-align: center;
+    gap: 4rem;
+&_card{
+    width: 352px;
+    height: 80vh;
+    text-align: center;
+&_info{
+    height: 65vh;
+    padding: 30px;
+    background-color: antiquewhite;
+    text-align: center;
+    border-radius: 50%;
+&_icon{
+    width: 5vw;
+    height: 6vh;
+    font-size: 3rem;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    margin-top: 3rem;
+}
+&_p{
+    font-size: 3rem;
+    font-weight: 600;
+    background-color: aquamarine;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+}
+&_bimg{
+    height: 100%;
+    width: 100%;
+}
+
+}
+}
+}

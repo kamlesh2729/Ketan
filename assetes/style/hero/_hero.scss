@@ -1,0 +1,82 @@
+@use "../global" as *;
+
+%align-jusctify-center{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+%align-center{
+    display: flex;
+    align-items: center;
+}
+%jusctify-center{
+    display: flex;
+    justify-content: center;
+}
+
+.Hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/main-banner-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @extend %align-jusctify-center;
+@include phone{
+    height: auto;
+    flex-direction: column;
+}
+&_left{
+    width: 50%;
+    height: 80vh;
+    padding: 0rem 3rem;
+    text-align: center;
+@include phone{
+    width: 100%;
+}
+&_p1{
+    color:#ff9a53;
+    font-size: $mid;
+    font-weight: 600;
+}
+&_h1{
+    font-size: 5rem;
+    font-weight: 600;
+}
+&_p2{
+    color: $bc;
+    font-size: $tall;
+    font-weight: 500;
+}
+&_btnbox{
+    width: 100%;
+    height: 8vh;
+    @extend %align-jusctify-center;
+    gap: 3rem;
+&_bt1,&_bt2{
+    width: 12vw;
+    height: 7vh;
+    border: none;
+    background-color: $ocd;
+    color: $wc;
+    transition: all 0.3ms ease-in-out;
+&:hover{
+    background-color: $oc;
+}
+&_a{
+    text-decoration: none;
+    color: $wc;
+    font-size: $tall;
+    font-weight: 600;
+}
+}
+}
+}
+&_right{
+    width: 50%;
+&_img{
+    width: 80%;
+    height: 90vh;
+}
+}
+}
