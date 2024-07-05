@@ -25,6 +25,9 @@ align-items: center;
     position: relative;
     padding: 10rem 0rem;
     text-align: center;
+@include phone{
+    height: auto;
+}
 &_sp{
     color: $wc;
     font-family: $tfont;
