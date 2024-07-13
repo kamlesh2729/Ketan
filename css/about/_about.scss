@@ -197,3 +197,12 @@ border-radius: 50%;
         border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
     }
 }
+
+@keyframes slider-right {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(60%);
+    }
+}

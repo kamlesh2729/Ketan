@@ -103,6 +103,7 @@ a{
 }
 &:hover{
     background-color: $oc;
+    animation: slide-top 1s ease normal both;
 }
 &_icon{
     color: $wc;
@@ -362,4 +363,13 @@ position: relative;
 }
 }
 }
+}
+
+@keyframes slide-top {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-15px);
+    }
 }

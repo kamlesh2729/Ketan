@@ -16,7 +16,7 @@ align-items: center;
 
 .Testimonal{
     width: 100%;
-    height: 130vh;
+    height: 140vh;
     padding: 6rem 3rem;
 @include phone{
     height: auto;
@@ -38,7 +38,7 @@ margin-top: $base;
 }
 }
 &_right{
-    width: 75vw;
+    width: 90%;
     margin: 4rem auto;
     @extend %align-jusctify-center;
     text-align: center;
@@ -47,12 +47,13 @@ margin-top: $base;
     flex-direction: column;
 }
 &_card{
-    width: 352px;
-    height: 80vh;
+    width: 100%;
+    height: 90vh;
     text-align: center;
 &_info{
-    height: 65vh;
+    height: 70vh;
     padding: 30px;
+    margin-bottom: 1rem;
     background-color: antiquewhite;
     text-align: center;
     border-radius: 50%;
@@ -65,18 +66,32 @@ margin-top: $base;
 }
 &_icon{
     width: 5vw;
-    height: 8vh;
+    height: 9vh;
     font-size: 3rem;
     border-radius: 50%;
     background-color: #FFFFFF;
     color: $ocd;
     margin-top: 1rem;
+    padding-top: 0.5rem;
 }
 &_p{
     font-size: $p;
-    font-weight: 500;
+    font-weight: 400;
     font-style: italic;
+    color: #6b6b84;
     margin-bottom: 0px;
+    margin-top: 3rem;
+    border-radius: 100%;
+}
+&_box{
+    margin-top: 3rem;
+&_h2{
+    font-size: $h2;
+}
+&_sp{
+    font-size: $p;
+    color: $ocd;
+}
 }
 }
 &_bimg{

@@ -210,6 +210,7 @@ nav {
   position: absolute;
   top: 2rem;
   left: 8rem;
+  animation: slider-right 5s ease-out infinite normal both;
 }
 .Hero_shape2 {
   width: 8vw;
@@ -217,6 +218,7 @@ nav {
   position: absolute;
   top: 4rem;
   right: 70rem;
+  animation: slider-right 5s ease-out infinite normal both;
 }
 .Hero_container {
   width: 100%;
@@ -340,6 +342,7 @@ nav {
   bottom: 24rem;
   left: 0;
   z-index: 2;
+  animation: slider-right 5s ease-out infinite normal both;
 }
 .Hero_shape4 {
   width: 8vw;
@@ -348,6 +351,7 @@ nav {
   bottom: 12rem;
   right: 70rem;
   z-index: 2;
+  animation: slider-top 5s ease-out infinite normal both;
 }
 .Hero_btbg {
   width: 100%;
@@ -355,6 +359,22 @@ nav {
   bottom: -1px;
 }
 
+@keyframes slider-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(60%);
+  }
+}
+@keyframes slider-top {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(60%);
+  }
+}
 .About_left, .About {
   display: flex;
   justify-content: center;
@@ -561,6 +581,14 @@ nav {
   }
   84% {
     border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
+}
+@keyframes slider-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(60%);
   }
 }
 .Classes_right_card_infobox_ul, .Classes_right {
@@ -1165,7 +1193,7 @@ nav {
 
 .Testimonal {
   width: 100%;
-  height: 130vh;
+  height: 140vh;
   padding: 6rem 3rem;
 }
 @media screen and (max-width: 500px) and (min-width: 300px) {
@@ -1190,7 +1218,7 @@ nav {
   margin: 2rem 0rem;
 }
 .Testimonal_right {
-  width: 75vw;
+  width: 90%;
   margin: 4rem auto;
   text-align: center;
   gap: 4rem;
@@ -1201,13 +1229,14 @@ nav {
   }
 }
 .Testimonal_right_card {
-  width: 352px;
-  height: 80vh;
+  width: 100%;
+  height: 90vh;
   text-align: center;
 }
 .Testimonal_right_card_info {
-  height: 65vh;
+  height: 70vh;
   padding: 30px;
+  margin-bottom: 1rem;
   background-color: antiquewhite;
   text-align: center;
   border-radius: 50%;
@@ -1221,18 +1250,32 @@ nav {
 }
 .Testimonal_right_card_info_icon {
   width: 5vw;
-  height: 8vh;
+  height: 9vh;
   font-size: 3rem;
   border-radius: 50%;
   background-color: #FFFFFF;
   color: #EA512E;
   margin-top: 1rem;
+  padding-top: 0.5rem;
 }
 .Testimonal_right_card_info_p {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 400;
   font-style: italic;
+  color: #6b6b84;
   margin-bottom: 0px;
+  margin-top: 3rem;
+  border-radius: 100%;
+}
+.Testimonal_right_card_info_box {
+  margin-top: 3rem;
+}
+.Testimonal_right_card_info_box_h2 {
+  font-size: 3.125rem;
+}
+.Testimonal_right_card_info_box_sp {
+  font-size: 2rem;
+  color: #EA512E;
 }
 .Testimonal_right_card_bimg {
   height: 100%;
@@ -1476,6 +1519,7 @@ nav {
 }
 .footer_container_box1_ul_li:hover {
   background-color: #f5890d;
+  animation: slide-top 1s ease normal both;
 }
 .footer_container_box1_ul_li_icon {
   color: #fff;
@@ -1762,4 +1806,13 @@ nav {
 }
 .footer_cp_p_sp:hover {
   color: #fff;
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
 }/*# sourceMappingURL=style.css.map */

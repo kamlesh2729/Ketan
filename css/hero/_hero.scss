@@ -32,6 +32,7 @@ align-items: center;
     position: absolute;
     top: 2rem;
     left: 8rem;
+    animation: slider-right 5s ease-out infinite normal both;
 }
 &_shape2{
     width: 8vw;
@@ -39,6 +40,7 @@ align-items: center;
     position: absolute;
     top: 4rem;
     right: 70rem;
+    animation: slider-right 5s ease-out infinite normal both;
 }
 &_container{
     width: 100%;
@@ -147,6 +149,7 @@ align-items: center;
     bottom: 24rem;
     left: 0;
     z-index: 2;
+    animation: slider-right 5s ease-out infinite normal both;
 }
 &_shape4{
     width: 8vw;
@@ -155,10 +158,28 @@ align-items: center;
     bottom: 12rem;
     right: 70rem;
     z-index: 2;
+    animation: slider-top 5s ease-out infinite normal both;
 }
 &_btbg{
     width: 100%;
     position: absolute;
     bottom: -1px;
 }
+}
+
+@keyframes slider-right {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(60%);
+    }
+}
+@keyframes slider-top {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(60%);
+    }
 }
