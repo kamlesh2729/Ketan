@@ -1,0 +1,150 @@
+@use '../global' as *;
+
+%align-jusctify-center{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+%align-center{
+    display: flex;
+    align-items: center;
+}
+%jusctify-center{
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    height: 12vh;
+}
+nav{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    @extend %align-center;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-btn{
+    width: 3vw;
+    height: 6vh;
+    font-size: medium;
+    position: absolute;
+    right: 6rem;
+    border: none;
+    background: #ffff;
+    display: none;
+@include phone{
+    display: block;
+}
+}
+.close-btn{
+    width: 3vw;
+    height: 6vh;
+    font-size: medium;
+    position: absolute;
+    right: 6rem;
+    border: none;
+    background: #ffff;
+    display: none;
+@include phone{
+    display: block;
+}
+}
+.menu{
+    // position: absolute;
+@include phone{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: #ffffff;
+    position:fixed;
+    top: 0;
+    left:-100rem;
+    z-index: 10;
+}
+&_ul{
+    @extend %align-jusctify-center;
+    gap: 3rem;
+    font-size: $li;
+    font-weight: 600;
+    list-style: none;
+@include phone{
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+}
+&_li{
+    list-style: none;
+    cursor: pointer;
+    text-align: center ;
+&:hover{
+    color: $oc;
+    transition: all 0.3s ease-in;
+}
+a{
+    text-decoration: none;
+    color: $bc;
+&:hover{
+    color: $oc;
+    transition: all 0.3s ease-in;
+}
+}
+&:hover &_ul1{
+    display: flex;
+    position: absolute;
+    top: 62%;
+    left: 26%;
+    z-index: 1;
+    transition: all 0.5s ease-out;
+}
+&_ul1{
+    width: 13vw;
+    padding: 2rem 0rem;
+    background-color: $wc;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    display: none;
+&_li{
+    width: 13vw;
+    margin: 1rem 0rem;
+    list-style: none;
+    text-align: center;
+&:hover{
+    color: $oc;
+}
+}
+}
+}
+}
+}
+.search-box{
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+@include phone{
+    display: none;
+}
+}
+.search-box input{
+    width: 14vw;
+    height: 6vh;
+    border: 2px solid #808080;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.search-btn{
+    width: 6vw;
+    height: 6vh;
+    background-color: $ocd;
+    color: $wc;
+    font-size: $p;
+    font-weight: 600;
+    border: none;
+    text-align: center;
+    border-radius: 4px;
+}

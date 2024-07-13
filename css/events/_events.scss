@@ -1,0 +1,128 @@
+@use '../global' as *;
+
+%align-jusctify-center{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+%align-center{
+    display: flex;
+    align-items: center;
+}
+%jusctify-center{
+    display: flex;
+    justify-content: center;
+}
+
+.Event{
+    width: 100%;
+    height: 260vh;
+    background-image: url(../assetes/images/event-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 10rem 0rem;
+    text-align: center;
+@include phone{
+    height: auto;
+}
+&_sp{
+    color: $wc;
+    font-family: $tfont;
+    font-size: $span;
+    font-weight: 600;
+    margin-top: $base;
+}
+&_h3{
+    font-size: $h3;
+    font-weight: 600;
+    font-family: $hfont;
+    margin: $base 0rem;
+    color: $wc;
+}
+&_box{
+    width: 100%;
+    height: 120vh;
+@include phone{
+    height: auto;
+}
+&_card{
+    width: 90%;
+    height: 50vh;
+    margin: 2.5rem auto;
+    background-color: $wc;
+    border-radius: 10px;
+    @extend%align-center;
+    justify-content:space-between;
+@include phone{
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0rem;
+}
+&_imgbox{
+    width: 24vw;
+    height: 44vh;
+    margin-left: 3rem;
+@include phone{
+    width: 50vw;
+    margin-bottom: 0.6rem;
+}
+&_img{
+    width: 100%;
+    height:100%;
+}
+}
+&_infobox{
+    text-align:start;
+@include phone{
+    text-align: center;
+}
+&_h3{
+    font-size: 4rem;
+    font-weight:700;
+    font-family: "Catamaran", sans-serif;
+    color: $bc;
+}
+&_ul{
+    text-align: justify;
+    margin-top: 2rem;
+@include phone{
+    text-align: center;
+}
+&_li{
+        list-style: none;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 1rem 0rem;
+.ic{
+    color: $ocd;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+    }
+}
+}
+&_datebox{
+    width: 14vw;
+    text-align: center;
+    margin-bottom: 1rem;
+&_h4{
+    font-size: 6rem;
+    font-weight:700;
+    color: $ocd;
+    font-family: "Catamaran", sans-serif;
+}
+&_sp{
+    font-size: 2rem;
+    font-weight: 500;
+    color: $ocd;
+
+}
+}
+}
+}
+}

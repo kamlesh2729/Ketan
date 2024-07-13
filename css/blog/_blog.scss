@@ -16,8 +16,8 @@ align-items: center;
 
 .Blog{
     width: 100%;
-    height: 130vh;
-    padding: 2rem 3rem;
+    height: 150vh;
+    padding: 6rem 3rem;
     text-align: center;
 @include phone{
     height: auto;
@@ -25,12 +25,12 @@ align-items: center;
 &_p{
 color: $oc;
     font-family: $tfont;
-    font-size: $h1;
+    font-size: $span;
     font-weight: 600;
     margin-top: $base;
 }
 &_h3{
-    font-size: 6rem;
+    font-size: $h3;
     font-weight: 600;
     font-family: $hfont;
     margin: $base 0rem;
@@ -40,16 +40,18 @@ color: $oc;
     height:90vh; 
     @extend %align-jusctify-center;
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 6rem;
     padding: $base 0px;
 @include phone{ 
     flex-direction: column;
     height: auto;
 }
 &_card{
-    width: 30vw;
-    height: 100vh;
+    width: 29vw;
+    height: auto;
     margin: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
     transition: all 0.3s ease-in-out;
 &:hover &_infobox_h3{
     color: $ocd;
@@ -57,6 +59,7 @@ color: $oc;
 &:hover &_imgbox_img{
     transform: rotate(2deg) scale(1.2);
     transition: all 0.3s linear;
+
 }
 @include phone{
     width: 90%;
@@ -64,7 +67,7 @@ color: $oc;
 }
 &_imgbox{
 width: 100%;
-height: 40vh;
+height: 50vh;
 overflow: hidden;
 &_img{
         width: 100%;
@@ -87,15 +90,15 @@ overflow: hidden;
 &_li{
     list-style: none;
     display: inline-block;
-    font-size: $h1;
+    font-size: $li;
     font-weight: 600;
 &_sp{
-        color: $ocd;
-        }
+    color: $ocd;
+    }
     }
 }
 &_h3{
-    font-size: 2.8rem;
+    font-size: $h2;
     font-weight:700;
     color: $bc;
     margin: 2rem 0rem;
@@ -103,7 +106,7 @@ overflow: hidden;
 }
 &_p{
     color: #6c6c6c;
-    font-size: $h1;
+    font-size: $p;
     font-family:"Roboto", sans-serif;
     font-weight:400;
     line-height: 1.8;
@@ -111,14 +114,15 @@ overflow: hidden;
     text-align:justify;
 }
 &_btn{
-    width: 14vw;
+    width: 10vw;
     height:7vh;
     background-color: $ocd;
     color: white;
     border: none;
-    font-size: $tall;
+    font-size: $p;
     font-weight: 600;
     margin: 1rem 0rem;
+    border-radius: 10px;
 &:hover{
     background-color: $oc;
 }

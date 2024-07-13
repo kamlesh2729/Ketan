@@ -1,0 +1,365 @@
+@use '../global' as *;
+
+%align-jusctify-center{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+%align-center{
+    display: flex;
+    align-items: center;
+}
+%jusctify-center{
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    width: 100%;
+    height: 80vh;
+    background-image: url(../assetes/images/footer-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    padding: 10rem 0rem;
+@include phone{
+    height: auto;
+    background-color: red;
+}
+&::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.9;
+}
+&_container{
+width: 100%;
+height: 70vh;
+display: flex;
+gap: 4rem;
+margin: 0px auto;
+padding: 0rem 8rem;
+@include phone{
+    flex-direction: column;
+    height: auto;
+    padding: 0rem 6rem;
+}
+&_box1{
+    width: 100%;
+&_logo{
+    margin-bottom: 3.125rem;
+&_h2{
+    font-size:6.125rem;
+    line-height: 1.2;
+    font-weight: 600;
+a{
+    text-decoration: none;
+    color: $wc;
+}
+}
+}
+&_p{
+    color: $wc;
+    font-size: 2rem;
+    line-height: 1.8;
+    font-weight: 400;
+    font-family: "Roboto",sans-serif;
+}
+&_ul{
+    display: flex;
+    gap: 2rem;
+    padding-left: 0rem;
+    margin-bottom: 0rem;
+    margin-top: 3.125rem;
+@include phone{
+    margin-top: 2rem;
+    text-align: center;
+}
+&_li{
+    width: 3vw;
+    height: 5vh;
+    border-radius: 50%;
+    background-color: $ocd;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in;
+@include phone{
+    width: 8vw;
+    height: 8vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+&:hover{
+    background-color: $oc;
+}
+&_icon{
+    color: $wc;
+    font-size: 2rem;
+@include phone{
+    font-size: 2.5rem;
+}
+}
+}
+}
+}
+&_box2{
+    width: 100%;
+@include phone{
+    margin-top: 2rem;
+}
+&_h3{
+    font-size: 4rem;
+    font-weight: 600;
+    color: $wc;
+    position: relative;
+&::before{
+    content: '';
+    background-color: $oc;
+    height: 0.4vh;
+    width: 5vw;
+    position: absolute;
+    top: 6rem;
+@include phone{
+    top: 6rem;
+}
+}
+}
+&_ul{
+    list-style-type: none;
+    padding-left: 0rem;
+    margin-top: 4rem;
+@include phone{
+    margin-top: 2rem;
+}
+&_li{
+    font-size: 1.9rem;
+    color: $wc;
+    margin-bottom: 1.3rem;
+    padding-left: 4.5rem;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    transition: all 0.5s ease-in-out;
+&:hover &_a{
+color: $ocd;
+}
+&:hover &_a::before{
+width: 100%;
+}
+.icon{
+    color: $ocd;
+    font-size: 2.8rem;
+    position: absolute;
+    left: 0;
+    top:1rem;
+}
+&_sp{
+    display: block;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    color: $wc;
+}
+&_a{
+display: inline-block;
+font-weight: 400;
+position: relative;
+color: $wc;
+font-size: 1.9rem;
+text-decoration: none;
+&:hover{
+color: $ocd;
+}
+&::before{
+content: '';
+background-color: $ocd;
+height: 0.1rem;
+width:0;
+position: absolute;
+bottom: 0;
+transition: .5s;
+}
+}
+}
+}
+}
+&_box3{
+    width: 90%;
+@include phone{
+    margin-top: 2rem;
+}
+&_h3{
+font-size: 4rem;
+font-weight: 600;
+color: $wc;
+position: relative;
+@include phone{
+    margin-top: 2rem;
+}
+&::before{
+    content: '';
+    background-color: $oc;
+    height: 0.4vh;
+    width: 5vw;
+    position: absolute;
+    top: 6rem;
+@include phone{
+    top: 6rem;
+}
+}
+}
+&_ul{
+    padding-left: 0rem;
+    margin-top: 4rem;
+@include phone{
+    margin-top: 2rem;
+}
+&_li{
+text-align: start;
+font-size: 2rem;
+font-weight: 600;
+line-height: 2.5;
+list-style: none;
+position: relative;
+transition: all 0.5s ease;
+&:hover &_a{
+color: $ocd;
+}
+&:hover &_a::before{
+background-color: $ocd;
+width: 100%;
+
+}
+&_a{
+color: $wc;
+text-decoration: none;
+transition: all 0.3s ease-in;
+position: relative;
+&::before{
+content: '';
+background-color: $ocd;
+height: 0.1rem;
+width: 0rem;
+position: absolute;
+bottom: 0;
+transition: .5s;
+}
+}
+}
+}
+}
+&_box4{
+    width: 100%;
+    position: relative;
+@include phone{
+    margin-top: 2rem;
+}
+&_h3{
+font-size: 4rem;
+font-weight: 600;
+color: $wc;
+position: relative;
+@include phone{
+    margin-bottom: 4rem;
+}
+&::before{
+    content: '';
+    background-color: $oc;
+    height: 0.4vh;
+    width: 5vw;
+    position: absolute;
+    top: 6rem;
+@include phone{
+    top: 6rem;
+}
+}
+}
+&_ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding-left: 0rem;
+    margin-top: 4rem;
+@include phone{
+        justify-content: center;
+        gap: 8px;
+    }
+&_li{
+    width: 80px;
+    height: 70px;
+    list-style: none;
+    overflow: hidden;
+&:hover &_box_a_img{
+        transform: scale(1.2);
+        transition: all 0.3s linear;
+    }
+&:hover &_box::before{
+    content: "";
+    width: 80px;
+    height: 70px;
+    background-color: #ea512e;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+@include phone{
+    width: 100%;
+}
+}
+@include phone{
+    width: 125px;
+}
+&_box{
+    width: 80px;
+    height: 70px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+@include phone{
+    width: 100%;
+}
+&_a{
+        list-style: none;
+&_img{
+        width: 80px;
+        height: 70px;
+@include phone{
+    width: 100%;
+}
+    }
+}
+}
+}
+}
+}
+}
+}
+.footer_cp{
+    height: 20vh;
+    background-color: #091629;
+    color:$wc;
+    text-align: center;
+    padding: 5rem 0px;
+&_p{
+    font-size: $heading;
+    text-align: center;
+&_sp{
+    color: $ocd;
+    font-weight: 600;
+&:hover{
+    color: $wc;
+}
+}
+}
+}

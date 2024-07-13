@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assetes/images/favicon.png" type="image/x-icon">
     <title>Ketan School</title>
-    <link rel="stylesheet" href="./assetes/css/style.css">
+    <link rel="stylesheet" href="./dist/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     
-    <script src="./assetes/js/main.js" defer async></script>
+    <script src="./js/main.js" defer async></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" defer async></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer async></script>
 </head>
@@ -19,7 +19,9 @@
     <header>
         <nav>
             <span class="logo"><img src="./assetes/images/logo.png" alt="ketan-logo"></span>
+            <button class="menu-btn" data-m-Btn><i class="fa-solid fa-bars"></i></button>
             <div class="menu">
+            <button class="close-btn" data-C-Btn><i class="fa-solid fa-xmark"></i></button>
             <ul class="menu_ul">
                     <li class="menu_ul_li"><a href="#"></a>Home</li>
                     <li class="menu_ul_li dpwn"><a href="#"></a>Pages
@@ -44,27 +46,33 @@
 
     <!-- Hero section start -->
     <section class="Hero">
-    <article class="Hero_left">
-    <p class="Hero_left_p1">Play, Learn And Grow.</p>
-    <h1 class="Hero_left_h1">Empowering Student Knowledge</h1>
-    <p class="Hero_left_p2">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum explicabo quam aperiam. Architecto culpa modi
-    perspiciatis ea earum esse consequatur, praesentium placeat quidem, saepe aspernatur voluptate accusamus,
-    natus quibusdam molestias.
+    <img src="./assetes/images/banner-shape-1.png" class="Hero_shape1" alt="owal-top-image">
+    <img src="./assetes/images/banner-shape-2.png" class="Hero_shape2" alt="banner-shape-image">
+    <article class="Hero_container">
+    <div class="Hero_container_left">
+    <p class="Hero_container_left_p1">Play, Learn And Grow.</p>
+    <h1 class="Hero_container_left_h1">Empowering Student Knowledge</h1>
+    <p class="Hero_container_left_p2">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
     </p>
-    <div class="Hero_left_btnbox">
-    <button class="Hero_left_btnbox_bt1"><a href="javascript:void()" class="Hero_left_btnbox_bt1_a">Learn More</a></button>
-    <button class="Hero_left_btnbox_bt2"><a href="" class="Hero_left_btnbox_bt2_a">Find Out More</a></button>
+    <div class="Hero_container_left_btnbox">
+    <button class="Hero_container_left_btnbox_bt1"><a href="javascript:void()" class="Hero_container_left_btnbox_bt1_a">Learn More</a></button>
+    <button class="Hero_container_left_btnbox_bt2"><a href="" class="Hero_container_left_btnbox_bt2_a">Find Out More</a></button>
+    </div>
+    </div>
+    <div class="Hero_container_right">
+    <img src="./assetes/images/education-girl.png" class="Hero_container_right_img" alt="education girl">
     </div>
     </article>
-    <article class="Hero_right">
-    <img src="./assetes/images/education-girl.png" class="Hero_right_img" alt="education girl">
-    </article>
+    <img src="./assetes/images/banner-shape-3.png" class="Hero_shape3" alt="bee-bottom-image">
+    <img src="./assetes/images/banner-shape-4.png" class="Hero_shape4" alt="owal-bttom-image">
+    <img src="./assetes/images/banner-bg-shape-1 1.png" class="Hero_btbg" alt="hero-bottom-bg">
     </section>
     <!-- Hero section end -->
 
     <!-- About Us section start -->
     <section class="About">
+    <!-- <img src="./assetes/images/who-we-are-shape.png" class="About_shape" alt="banner-mage"> -->
     <article class="About_left">
     <img src="./assetes/images/who-we-are.jpg" class="About_left_img" alt="about img">
     </article>
@@ -138,6 +146,8 @@
     </div>
     </div>
     </article>
+    <!-- <img src="./assetes/images/class-shape-1.png" class="About_shape" alt="banner-mage"> -->
+    <!-- <img src="./assetes/images/class-shape-2.png" class="About_shape" alt="banner-mage"> -->
     </section>
     <!-- Class section end -->
 
@@ -147,23 +157,23 @@
         <img src="./assetes/images/value-1.png" class="CoreValue_left_img" alt="core value img">
     </article>
     <article class="CoreValue_right">
-    <span>Our Core Value</span>
-    <h3>We are Refunding Early childcare Education</h3>
+    <span class="CoreValue_right_spn">Our Core Value</span>
+    <h3 class="CoreValue_right_h3">We are Refunding Early childcare Education</h3>
     <div class="CoreValue_right_list">
-        <span class="CoreValue_right_list_sp">01</span>
-        <h4 class="Corevalue_right_list_h4">Active Learning</h4>
+    <span class="CoreValue_right_list_sp sp1">01</span>
+    <h4 class="CoreValue_right_list_h4">Active Learning</h4>
+    <p class="CoreValue_right_list_p">" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</p>
+    </div>
+
+    <div class="CoreValue_right_list">
+        <span class="CoreValue_right_list_sp sp2">02</span>
+        <h4 class="CoreValue_right_list_h4">Safe Environment</h4>
         <p class="CoreValue_right_list_p">" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</p>
     </div>
 
     <div class="CoreValue_right_list">
-        <span class="CoreValue_right_list_sp">02</span>
-        <h4 class="Corevalue_right_list_h4">Safe Environment</h4>
-        <p class="CoreValue_right_list_p">" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</p>
-    </div>
-
-    <div class="CoreValue_right_list">
-        <span class="CoreValue_right_list_sp">03</span>
-        <h4 class="Corevalue_right_list_h4">Fully Equipment</h4>
+        <span class="CoreValue_right_list_sp sp3">03</span>
+        <h4 class="CoreValue_right_list_h4">Fully Equipment</h4>
         <p class="CoreValue_right_list_p">" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</p>
     </div>
     </article>
@@ -263,7 +273,7 @@
             <div class="Testimonal_right_card_info_icon">
             <i class="fa-solid fa-quote-left"></i>
             </div>
-            <p class="Testimonal_right_crad_info_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore nisi nemo repellat facere eveniet ullam laborum magni dolore nobis, expedita autem? Quis laborum labore quas expedita hic ratione! Voluptatem.</p>
+            <p class="Testimonal_right_card_info_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
             <div class="Testimonal_right_card_info_box">
             <h2 class="Testimonal_right_card_info_box_h2">Name</h2>
             <span class="Testimonal_right_card_info_box_sp"> Teacher</span>    
@@ -280,7 +290,7 @@
             <div class="Testimonal_right_card_info_icon">
             <i class="fa-solid fa-quote-left"></i>
             </div>
-            <p class="Testimonal_right_crad_info_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore nisi nemo repellat facere eveniet ullam laborum magni dolore nobis, expedita autem? Quis laborum labore quas expedita hic ratione! Voluptatem.</p>
+            <p class="Testimonal_right_card_info_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
             <div class="Testimonal_right_card_info_box">
             <h2 class="Testimonal_right_card_info_box_h2">Name</h2>
             <span class="Testimonal_right_card_info_box_sp"> Teacher</span>    
@@ -297,7 +307,7 @@
             <div class="Testimonal_right_card_info_icon">
             <i class="fa-solid fa-quote-left"></i>
             </div>
-            <p class="Testimonal_right_crad_info_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore nisi nemo repellat facere eveniet ullam laborum magni dolore nobis, expedita autem? Quis laborum labore quas expedita hic ratione! Voluptatem.</p>
+            <p class="Testimonal_right_card_info_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
             <div class="Testimonal_right_card_info_box">
             <h2 class="Testimonal_right_card_info_box_h2">Name</h2>
             <span class="Testimonal_right_card_info_box_sp"> Teacher</span>    
@@ -318,10 +328,73 @@
     <span class="Event_sp">Event</span>
     <h3 class="Event_h3">Upcomming Event</h3>
     <article class="Event_box">
-    <div class="Event_box_card">1</div>
-    <div class="Event_box_card">2</div>
-    <div class="Event_box_card">3</div>
-    <div class="Event_box_card">4</div>
+    <div class="Event_box_card">
+        <div class="Event_box_card_imgbox">
+            <img src="./assetes/images/event-1.png" class="Event_box_card_imgbox_img" alt="event-img">
+        </div>
+        <div class="Event_box_card_infobox">
+            <h3 class="Event_box_card_infobox_h3">Annual Cultural Programme</h3>
+            <ul class="Event_box_card_infobox_ul">
+                <li class="Event_box_card_infobox_ul_li"><i class="fa-regular fa-clock ic"></i> 8:00 AM - 10:00 PM</li>
+                <li class="Event_box_card_infobox_ul_li"><i class="fa-solid fa-location-dot ic"></i> New York 56 Glassford Street Glasgow</li>
+            </ul>
+        </div>
+        <div class="Event_box_card_datebox">
+            <h4 class="Event_box_card_datebox_h4">12</h4>
+            <span class="Event_box_card_datebox_sp">September</span>
+        </div>
+    </div>
+
+    <div class="Event_box_card">
+        <div class="Event_box_card_imgbox">
+            <img src="./assetes/images/event-2.png" class="Event_box_card_imgbox_img" alt="event-img">
+        </div>
+        <div class="Event_box_card_infobox">
+            <h3 class="Event_box_card_infobox_h3">World Kids Day</h3>
+            <ul class="Event_box_card_infobox_ul">
+                <li class="Event_box_card_infobox_ul_li"><i class="fa-regular fa-clock ic"></i> 8:00 AM - 10:00 PM</li>
+                <li class="Event_box_card_infobox_ul_li"><i class="fa-solid fa-location-dot ic"></i> New York 56 Glassford Street Glasgow</li>
+            </ul>
+        </div>
+        <div class="Event_box_card_datebox">
+            <h4 class="Event_box_card_datebox_h4">18</h4>
+            <span class="Event_box_card_datebox_sp">January</span>
+        </div>
+    </div>
+
+    <div class="Event_box_card">
+        <div class="Event_box_card_imgbox">
+            <img src="./assetes/images/event-3.png" class="Event_box_card_imgbox_img" alt="event-img">
+        </div>
+        <div class="Event_box_card_infobox">
+            <h3 class="Event_box_card_infobox_h3">World Drawing Day</h3>
+            <ul class="Event_box_card_infobox_ul">
+                <li class="Event_box_card_infobox_ul_li"><i class="fa-regular fa-clock ic"></i> 8:00 AM - 10:00 PM</li>
+                <li class="Event_box_card_infobox_ul_li"><i class="fa-solid fa-location-dot ic"></i> New York 56 Glassford Street Glasgow</li>
+            </ul>
+        </div>
+        <div class="Event_box_card_datebox">
+            <h4 class="Event_box_card_datebox_h4">25</h4>
+            <span class="Event_box_card_datebox_sp">March</span>
+        </div>
+    </div>
+
+    <div class="Event_box_card">
+        <div class="Event_box_card_imgbox">
+            <img src="./assetes/images/event-4.png" class="Event_box_card_imgbox_img" alt="event-img">
+        </div>
+        <div class="Event_box_card_infobox">
+            <h3 class="Event_box_card_infobox_h3">Teachers Day</h3>
+            <ul class="Event_box_card_infobox_ul">
+                <li class="Event_box_card_infobox_ul_li"><i class="fa-regular fa-clock ic"></i> 8:00 AM - 10:00 PM</li>
+                <li class="Event_box_card_infobox_ul_li"><i class="fa-solid fa-location-dot ic"></i> New York 56 Glassford Street Glasgow</li>
+            </ul>
+        </div>
+        <div class="Event_box_card_datebox">
+            <h4 class="Event_box_card_datebox_h4">30</h4>
+            <span class="Event_box_card_datebox_sp">April</span>
+        </div>
+    </div>
     </article>
     </section>
     <!-- Events section end -->
@@ -385,7 +458,7 @@
     <footer class="footer">
     <section class="footer_container">
     <div class="footer_container_box1">
-    <div class="footer_container_box1_logo"><h2 class="footer_container_box1_logo_h2">Ketan</h2></div>
+    <div class="footer_container_box1_logo"><h2 class="footer_container_box1_logo_h2"><a href="./index.html">Ketan</a></h2></div>
     <p class="footer_container_box1_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     <ul class="footer_container_box1_ul">
         <li class="footer_container_box1_ul_li"><a href="#" class="footer_container_box1_ul_li_icon"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -420,56 +493,65 @@
     <h3 class="footer_container_box4_h3">Photo Gallery</h3>
     <ul class="footer_container_box4_ul">
     <li class="footer_container_box4_ul_li">
-        <div class="footer_container_box4_ul_li">
-        <a href="#" class="footer_container_box4_ul_li_a"><img src="./assetes/images/footer-gallery-1.jpg" class="footer_container_box4_ul_li_a_img" alt="photo-gallary">
+        <div class="footer_container_box4_ul_li_box">
+        <a href="#" class="footer_container_box4_ul_li_box_a">
+        <img src="./assetes/images/footer-gallery-1.jpg" class="footer_container_box4_ul_li_box_a_img" alt="photo-gallary">
         </a>
         </div>
         </li>
     <li class="footer_container_box4_ul_li">
-        <div class="footer_container_box4_ul_li">
-        <a href="#" class="footer_container_box4_ul_li_a"><img src="./assetes/images/footer-gallery-2.jpg" class="footer_container_box4_ul_li_a_img" alt="photo-gallary">
+        <div class="footer_container_box4_ul_li_box">
+        <a href="#" class="footer_container_box4_ul_li_box_a">
+        <img src="./assetes/images/footer-gallery-2.jpg" class="footer_container_box4_ul_li_box_a_img" alt="photo-gallary">
         </a>
         </div>
         </li>
     <li class="footer_container_box4_ul_li">
-        <div class="footer_container_box4_ul_li">
-        <a href="#" class="footer_container_box4_ul_li_a"><img src="./assetes/images/footer-gallery-3.jpg" class="footer_container_box4_ul_li_a_img" alt="photo-gallary">
+        <div class="footer_container_box4_ul_li_box">
+        <a href="#" class="footer_container_box4_ul_li_box_a">
+        <img src="./assetes/images/footer-gallery-3.jpg" class="footer_container_box4_ul_li_box_a_img" alt="photo-gallary">
         </a>
         </div>
         </li>
     <li class="footer_container_box4_ul_li">
-        <div class="footer_container_box4_ul_li">
-        <a href="#" class="footer_container_box4_ul_li_a"><img src="./assetes/images/footer-gallery-4.jpg" class="footer_container_box4_ul_li_a_img" alt="photo-gallary">
+        <div class="footer_container_box4_ul_li_box">
+        <a href="#" class="footer_container_box4_ul_li_box_a">
+        <img src="./assetes/images/footer-gallery-4.jpg" class="footer_container_box4_ul_li_box_a_img" alt="photo-gallary">
         </a>
         </div>
         </li>
     <li class="footer_container_box4_ul_li">
-        <div class="footer_container_box4_ul_li">
-        <a href="#" class="footer_container_box4_ul_li_a"><img src="./assetes/images/footer-gallery-5.jpg" class="footer_container_box4_ul_li_a_img" alt="photo-gallary">
+        <div class="footer_container_box4_ul_li_box">
+        <a href="#" class="footer_container_box4_ul_li_box_a">
+        <img src="./assetes/images/footer-gallery-5.jpg" class="footer_container_box4_ul_li_box_a_img" alt="photo-gallary">
         </a>
         </div>
         </li>
     <li class="footer_container_box4_ul_li">
-        <div class="footer_container_box4_ul_li">
-        <a href="#" class="footer_container_box4_ul_li_a"><img src="./assetes/images/footer-gallery-6.jpg" class="footer_container_box4_ul_li_a_img" alt="photo-gallary">
+        <div class="footer_container_box4_ul_li_box">
+        <a href="#" class="footer_container_box4_ul_li_box_a">
+        <img src="./assetes/images/footer-gallery-6.jpg" class="footer_container_box4_ul_li_box_a_img" alt="photo-gallary">
         </a>
         </div>
         </li>
     <li class="footer_container_box4_ul_li">
-        <div class="footer_container_box4_ul_li">
-        <a href="#" class="footer_container_box4_ul_li_a"><img src="./assetes/images/footer-gallery-1.jpg" class="footer_container_box4_ul_li_a_img" alt="photo-gallary">
+        <div class="footer_container_box4_ul_li_box">
+        <a href="#" class="footer_container_box4_ul_li_box_a">
+        <img src="./assetes/images/footer-gallery-1.jpg" class="footer_container_box4_ul_li_box_a_img" alt="photo-gallary">
         </a>
         </div>
         </li>
     <li class="footer_container_box4_ul_li">
-        <div class="footer_container_box4_ul_li">
-        <a href="#" class="footer_container_box4_ul_li_a"><img src="./assetes/images/footer-gallery-2.jpg" class="footer_container_box4_ul_li_a_img" alt="photo-gallary">
+        <div class="footer_container_box4_ul_li_box">
+        <a href="#" class="footer_container_box4_ul_li_box_a">
+        <img src="./assetes/images/footer-gallery-2.jpg" class="footer_container_box4_ul_li_box_a_img" alt="photo-gallary">
         </a>
         </div>
         </li>
     <li class="footer_container_box4_ul_li">
-        <div class="footer_container_box4_ul_li">
-        <a href="#" class="footer_container_box4_ul_li_a"><img src="./assetes/images/footer-gallery-3.jpg" class="footer_container_box4_ul_li_a_img" alt="photo-gallary">
+        <div class="footer_container_box4_ul_li_box">
+        <a href="#" class="footer_container_box4_ul_li_box_a">
+        <img src="./assetes/images/footer-gallery-3.jpg" class="footer_container_box4_ul_li_box_a_img" alt="photo-gallary">
         </a>
         </div>
         </li>

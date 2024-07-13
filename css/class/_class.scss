@@ -16,7 +16,7 @@ align-items: center;
 
 .Classes{
 width: 100%;
-height: auto;
+height: 150vh;
 padding: $head 0rem;
 background: #fdf6ed;
 text-align: center;
@@ -29,33 +29,39 @@ text-align: center;
 &_sp{
     color: $oc;
     font-family: $tfont;
-    font-size: $h1;
+    font-size: $span;
     font-weight: 600;
     margin-top: 2rem;
+@include phone{
+    font-size: 4rem;
+    margin-top: 1rem;
+}
 }
 &_h3{
     font-size: 6rem;
     font-weight: 600;
-    font-family: $hfont;
+    font-family: $h3;
     margin: $base 0rem;
 }
 &_right{
     width: 100%;
     height:90vh; 
     @extend %align-jusctify-center;
-    gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 6rem;
     padding: $base 0px;
 @include phone{ 
     flex-direction: column;
     height: auto;
 }
 &_card{
-    width: 25vw;
-    height: 90vh;
-    margin: 3rem;
+    width: 28vw;
+    height: 105vh;
+    margin: 2rem;
+    background-color: #ffff;
+    border-radius: 0 0 10px 10px;
 @include phone{
-    width: 90%;
+    width: 80%;
+    height: auto;
 }
 &_imgbox{
 width: 100%;
@@ -73,16 +79,24 @@ overflow: hidden;
 &_infobox{
     width: 100%;
     height: 60vh;
+    text-align: justify;
+    padding: 0rem 3rem;
+@include phone{
+    height: auto;
+}
 &_h3{
-    font-weight: 600;
-    font-size: $tall;
+    font-weight: 700;
+    font-size: $h2;
     margin-top: 2rem;
 }
 &_p{
-    color: #a6a6a6;
-    font-size: $mid;
-    font-weight: 600;
-    margin: 1rem 0rem;
+    color: #6e6e6e;
+    font-size: $p;
+    font-weight: 500;
+    margin: 1rem 0.5rem;
+@include phone{
+    font-size: 1.8rem;
+}
 }
 &_ul{
     border-top: 2px dashed $oc;
@@ -92,21 +106,25 @@ overflow: hidden;
     padding: 2rem 0rem;
     &_li{
         list-style: none;
+        font-size: $li;
+        font-weight: 600;
         &_sp{
             color: $ocd;
         }
     }
 }
 &_btn{
-    width: 14vw;
+    width: 10vw;
     height:7vh;
     background-color: $oc;
     color: white;
     border: none;
-    font-size: $tall;
+    font-size: $p;
     font-weight: 600;
+    border-radius: 5px;
 @include phone{
     width: 26vw;
+    margin-bottom: 1rem;
 }
 }
 }
