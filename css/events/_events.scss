@@ -33,13 +33,13 @@ align-items: center;
     font-family: $tfont;
     font-size: $span;
     font-weight: 600;
-    margin-top: $base;
+    margin-top: 1rem;
 }
 &_h3{
     font-size: $h3;
     font-weight: 600;
     font-family: $hfont;
-    margin: $base 0rem;
+    margin: 1rem 0rem;
     color: $wc;
 }
 &_box{

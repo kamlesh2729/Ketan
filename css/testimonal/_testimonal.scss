@@ -28,13 +28,13 @@ color: $oc;
 font-family: $tfont;
 font-size: $span;
 font-weight: 600;
-margin-top: $base;
+margin-top: 1rem;
 }
 &_h3{
     font-size: $h3;
     font-weight: 600;
     font-family: $hfont;
-    margin: $base 0rem;
+    margin: 1rem 0rem;
 }
 }
 &_right{
@@ -44,12 +44,20 @@ margin-top: $base;
     text-align: center;
     gap: 4rem;
 @include phone{
-    flex-direction: column;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    overflow: hidden;
 }
 &_card{
     width: 100%;
     height: 90vh;
     text-align: center;
+@include phone{
+    width: 100vw;
+    height: auto;
+    padding: 0rem 8rem;
+}
 &_info{
     height: 70vh;
     padding: 30px;
@@ -60,19 +68,27 @@ margin-top: $base;
     display:flex;
     flex-direction: column;
     align-items: center;
+@include phone{
+        width: 100%;
+        height: 84vh;
+}
 &:hover &_icon{
     background-color: $ocd;
     color: $wc;
 }
 &_icon{
     width: 5vw;
-    height: 9vh;
+    height: 8vh;
     font-size: 3rem;
     border-radius: 50%;
     background-color: #FFFFFF;
     color: $ocd;
     margin-top: 1rem;
     padding-top: 0.5rem;
+@include phone{
+    width: 12vw;
+    height: 10vh;
+}
 }
 &_p{
     font-size: $p;
@@ -97,6 +113,9 @@ margin-top: $base;
 &_bimg{
     height: 100%;
     width: 100%;
+@include phone{
+    height: auto;
+}
 }
 
 }

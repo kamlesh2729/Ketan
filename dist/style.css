@@ -38,13 +38,17 @@ nav {
 }
 
 header {
-  height: 12vh;
+  width: 100%;
+  height: 13vh;
+  background-color: #ffffff;
+  z-index: 100;
 }
 
 nav {
   width: 90%;
-  height: auto;
+  height: 12vh;
   margin: 0 auto;
+  background-color: #ffffff;
   padding: 1rem 2rem;
   justify-content: space-between;
   position: relative;
@@ -82,6 +86,9 @@ nav {
   }
 }
 
+.menu {
+  margin: auto 0px;
+}
 @media screen and (max-width: 500px) and (min-width: 300px) {
   .menu {
     width: 100%;
@@ -99,6 +106,7 @@ nav {
   font-size: 1.875rem;
   font-weight: 600;
   list-style: none;
+  text-align: center;
 }
 @media screen and (max-width: 500px) and (min-width: 300px) {
   .menu_ul {
@@ -111,6 +119,8 @@ nav {
   list-style: none;
   cursor: pointer;
   text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
 }
 .menu_ul_li:hover {
   color: #f5890d;
@@ -493,7 +503,7 @@ nav {
   font-size: 6rem;
   font-weight: 600;
   font-family: 5.625rem;
-  margin: 2rem 0rem;
+  margin: 1rem 0rem;
 }
 .About_right_p {
   color: #5f5f5f;
@@ -600,7 +610,7 @@ nav {
 .Classes {
   width: 100%;
   height: 150vh;
-  padding: 6rem 0rem;
+  padding: 3rem 0rem;
   background: #fdf6ed;
   text-align: center;
 }
@@ -631,13 +641,13 @@ nav {
   font-size: 6rem;
   font-weight: 600;
   font-family: 5.625rem;
-  margin: 2rem 0rem;
+  margin: 1rem 0rem;
 }
 .Classes_right {
   width: 100%;
   height: 90vh;
   margin-top: 6rem;
-  padding: 2rem 0px;
+  padding: 1rem 0px;
 }
 @media screen and (max-width: 500px) and (min-width: 300px) {
   .Classes_right {
@@ -700,7 +710,7 @@ nav {
 }
 .Classes_right_card_infobox_ul {
   border-top: 2px dashed #f5890d;
-  gap: 5rem;
+  gap: 4rem;
   margin: 2rem 0rem;
   padding: 2rem 0rem;
 }
@@ -742,9 +752,9 @@ nav {
 }
 @media screen and (max-width: 500px) and (min-width: 300px) {
   .CoreValue {
-    flex-direction: column;
     height: auto;
-    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0rem 4rem 0rem;
     gap: 1rem;
   }
 }
@@ -771,8 +781,9 @@ nav {
 @media screen and (max-width: 500px) and (min-width: 300px) {
   .CoreValue_right {
     width: 90%;
-    text-align: center;
+    height: auto;
     margin-top: 2rem;
+    padding-bottom: 3rem;
   }
 }
 .CoreValue_right_spn {
@@ -791,11 +802,22 @@ nav {
   font-size: 5.625rem;
   font-weight: 600;
   font-family: "Catamaran", sans-serif;
-  margin: 2rem 0rem;
+  margin: 1rem 0rem;
 }
 .CoreValue_right_list {
   position: relative;
   margin-top: 8rem;
+}
+@media screen and (max-width: 500px) and (min-width: 300px) {
+  .CoreValue_right_list {
+    height: 34vh;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .CoreValue_right_list:hover .sp1 {
   background-color: #EA512E;
@@ -849,6 +871,11 @@ nav {
   left: -0.9rem;
   top: -1rem;
 }
+@media screen and (max-width: 500px) and (min-width: 300px) {
+  .CoreValue_right_list .sp1::before {
+    left: 19.5rem;
+  }
+}
 .CoreValue_right_list .sp2 {
   background-color: #fce0ad;
   transition: all 0.5s ease-in-out;
@@ -863,6 +890,11 @@ nav {
   border-radius: 50%;
   left: -0.9rem;
   top: -1rem;
+}
+@media screen and (max-width: 500px) and (min-width: 300px) {
+  .CoreValue_right_list .sp2::before {
+    left: 19.5rem;
+  }
 }
 .CoreValue_right_list .sp3 {
   background-color: #fbc9d5;
@@ -879,6 +911,11 @@ nav {
   left: -0.9rem;
   top: -1rem;
 }
+@media screen and (max-width: 500px) and (min-width: 300px) {
+  .CoreValue_right_list .sp3::before {
+    left: 19.5rem;
+  }
+}
 .CoreValue_right_list_h4 {
   font-weight: 700;
   font-size: 3.125rem;
@@ -887,12 +924,26 @@ nav {
   top: -1rem;
   left: 8rem;
 }
+@media screen and (max-width: 500px) and (min-width: 300px) {
+  .CoreValue_right_list_h4 {
+    font-size: 2rem;
+    top: 8rem;
+    left: 16rem;
+    text-align: center;
+  }
+}
 .CoreValue_right_list_p {
   font-size: 2rem;
   color: #6e6e6e;
   position: absolute;
   top: 4rem;
   left: 8rem;
+}
+@media screen and (max-width: 500px) and (min-width: 300px) {
+  .CoreValue_right_list_p {
+    top: 12rem;
+    left: 0;
+  }
 }
 
 .Event_box_card {
@@ -922,13 +973,13 @@ nav {
   font-family: "Sacramento", cursive;
   font-size: 4rem;
   font-weight: 600;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .Event_h3 {
   font-size: 5.625rem;
   font-weight: 600;
   font-family: "Catamaran", sans-serif;
-  margin: 2rem 0rem;
+  margin: 1rem 0rem;
   color: #fff;
 }
 .Event_box {
@@ -1033,7 +1084,7 @@ nav {
   width: 100%;
   height: 110vh;
   padding-top: 8rem;
-  padding-bottom: 6rem;
+  padding-bottom: 3rem;
   text-align: center;
   background-image: url(../assetes/images/teacher-bg.jpg);
   background-position: center;
@@ -1056,19 +1107,19 @@ nav {
   font-family: "Sacramento", cursive;
   font-size: 4rem;
   font-weight: 600;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .Teacher_h2 {
   font-size: 5.625rem;
   font-weight: 600;
   font-family: "Catamaran", sans-serif;
-  margin: 2rem 0rem;
+  margin: 1rem 0rem;
 }
 .Teacher_box {
   width: 100%;
   height: 90vh;
   gap: 1rem;
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
 }
 @media screen and (max-width: 768px) and (min-width: 501px) {
   .Teacher_box {
@@ -1209,13 +1260,13 @@ nav {
   font-family: "Sacramento", cursive;
   font-size: 4rem;
   font-weight: 600;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .Testimonal_left_h3 {
   font-size: 5.625rem;
   font-weight: 600;
   font-family: "Catamaran", sans-serif;
-  margin: 2rem 0rem;
+  margin: 1rem 0rem;
 }
 .Testimonal_right {
   width: 90%;
@@ -1225,13 +1276,23 @@ nav {
 }
 @media screen and (max-width: 500px) and (min-width: 300px) {
   .Testimonal_right {
-    flex-direction: column;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    overflow: hidden;
   }
 }
 .Testimonal_right_card {
   width: 100%;
   height: 90vh;
   text-align: center;
+}
+@media screen and (max-width: 500px) and (min-width: 300px) {
+  .Testimonal_right_card {
+    width: 100vw;
+    height: auto;
+    padding: 0rem 8rem;
+  }
 }
 .Testimonal_right_card_info {
   height: 70vh;
@@ -1244,19 +1305,31 @@ nav {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (max-width: 500px) and (min-width: 300px) {
+  .Testimonal_right_card_info {
+    width: 100%;
+    height: 84vh;
+  }
+}
 .Testimonal_right_card_info:hover .Testimonal_right_card_info_icon {
   background-color: #EA512E;
   color: #fff;
 }
 .Testimonal_right_card_info_icon {
   width: 5vw;
-  height: 9vh;
+  height: 8vh;
   font-size: 3rem;
   border-radius: 50%;
   background-color: #FFFFFF;
   color: #EA512E;
   margin-top: 1rem;
   padding-top: 0.5rem;
+}
+@media screen and (max-width: 500px) and (min-width: 300px) {
+  .Testimonal_right_card_info_icon {
+    width: 12vw;
+    height: 10vh;
+  }
 }
 .Testimonal_right_card_info_p {
   font-size: 2rem;
@@ -1281,6 +1354,11 @@ nav {
   height: 100%;
   width: 100%;
 }
+@media screen and (max-width: 500px) and (min-width: 300px) {
+  .Testimonal_right_card_bimg {
+    height: auto;
+  }
+}
 
 .Blog_container {
   display: flex;
@@ -1304,20 +1382,20 @@ nav {
   font-family: "Sacramento", cursive;
   font-size: 4rem;
   font-weight: 600;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .Blog_h3 {
   font-size: 5.625rem;
   font-weight: 600;
   font-family: "Catamaran", sans-serif;
-  margin: 2rem 0rem;
+  margin: 1rem 0rem;
 }
 .Blog_container {
   width: 100%;
   height: 90vh;
   gap: 2rem;
   margin-top: 6rem;
-  padding: 2rem 0px;
+  padding: 1rem 0px;
 }
 @media screen and (max-width: 500px) and (min-width: 300px) {
   .Blog_container {
@@ -1369,7 +1447,7 @@ nav {
 }
 .Blog_container_card_infobox_ul {
   display: flex;
-  gap: 5rem;
+  gap: 4rem;
   padding: 2rem 0px;
 }
 .Blog_container_card_infobox_ul_li {

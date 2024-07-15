@@ -19,11 +19,10 @@ align-items: center;
     height: 130vh;
     @extend%align-jusctify-center;
     gap: 4rem;
-    
 @include phone{
-    flex-direction: column;
     height: auto;
-    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0rem 4rem 0rem ;
     gap: 1rem;
 }
 &_left{
@@ -43,8 +42,10 @@ align-items: center;
     width: 45%;
 @include phone{
         width: 90%;
-        text-align: center;
+        height: auto;
+        // text-align: center;
         margin-top: 2rem;
+        padding-bottom: 3rem;
     }
 &_spn{
     color: $oc;
@@ -60,11 +61,20 @@ align-items: center;
 font-size: $h3;
 font-weight: 600;
 font-family: $hfont;
-margin: $base 0rem;
+margin: 1rem 0rem;
 }
 &_list{
     position: relative;
     margin-top: 8rem;
+@include phone{
+    height: 34vh;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 &:hover .sp1{
     background-color: $ocd;
     transition: all 0.5s ease;
@@ -115,6 +125,9 @@ margin: $base 0rem;
     border-radius: 50%;
     left: -0.9rem;
     top: -1rem;
+@include phone{
+    left: 19.5rem;
+}
 }
 }
 .sp2{
@@ -130,6 +143,9 @@ margin: $base 0rem;
     border-radius: 50%;
     left: -0.9rem;
     top: -1rem;
+    @include phone{
+    left: 19.5rem;
+}
 }
 }
 .sp3{
@@ -145,6 +161,9 @@ margin: $base 0rem;
     border-radius: 50%;
     left: -0.9rem;
     top: -1rem;
+@include phone{
+    left: 19.5rem;
+}
 }
 }
 &_h4{
@@ -154,6 +173,12 @@ margin: $base 0rem;
     position: absolute;
     top: -1rem;
     left: 8rem;
+@include phone{
+    font-size: $p;
+    top: 8rem;
+    left: 16rem;
+    text-align: center;
+}
 }
 &_p{
     font-size: $p;
@@ -161,6 +186,10 @@ margin: $base 0rem;
     position: absolute;
     top: 4rem;
     left: 8rem;
+@include phone{
+    top: 12rem;
+    left: 0;
+}
 }
 }
 }

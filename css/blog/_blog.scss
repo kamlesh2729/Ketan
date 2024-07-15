@@ -27,13 +27,13 @@ color: $oc;
     font-family: $tfont;
     font-size: $span;
     font-weight: 600;
-    margin-top: $base;
+    margin-top: 1rem;
 }
 &_h3{
     font-size: $h3;
     font-weight: 600;
     font-family: $hfont;
-    margin: $base 0rem;
+    margin: 1rem 0rem;
 }
 &_container{
     width: 100%;
@@ -41,7 +41,7 @@ color: $oc;
     @extend %align-jusctify-center;
     gap: 2rem;
     margin-top: 6rem;
-    padding: $base 0px;
+    padding: 1rem 0px;
 @include phone{ 
     flex-direction: column;
     height: auto;
@@ -85,7 +85,7 @@ overflow: hidden;
 }
 &_ul{
     display: flex;
-    gap: $tall;
+    gap: 4rem;
     padding: 2rem 0px;
 &_li{
     list-style: none;

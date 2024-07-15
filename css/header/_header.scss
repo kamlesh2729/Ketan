@@ -15,12 +15,16 @@ align-items: center;
 }
 
 header{
-    height: 12vh;
+    width: 100%;
+    height: 13vh;
+    background-color: #ffffff;
+    z-index: 100;
 }
 nav{
     width: 90%;
-    height: auto;
+    height: 12vh;
     margin: 0 auto;
+    background-color: #ffffff;
     @extend %align-center;
     padding: 1rem 2rem;
     justify-content: space-between;
@@ -53,7 +57,7 @@ nav{
 }
 }
 .menu{
-    // position: absolute;
+    margin: auto 0px;
 @include phone{
     width: 100%;
     height: 100vh;
@@ -70,6 +74,7 @@ nav{
     font-size: $li;
     font-weight: 600;
     list-style: none;
+    text-align: center;
 @include phone{
     flex-direction: column;
     align-items: center;
@@ -78,7 +83,9 @@ nav{
 &_li{
     list-style: none;
     cursor: pointer;
-    text-align: center ;
+    text-align: center;
+    font-size: $p;
+    font-weight: 700;
 &:hover{
     color: $oc;
     transition: all 0.3s ease-in;
